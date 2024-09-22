@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a home page</title>
+    
+    
+    <link rel="stylesheet" href="/CSS/tables.css">
+</head>
+
+<body>
+  <a href="/HTML6/chips.html"><button class="backbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+  </svg></button></a>
+  
+  <a href="/HTML6/sauces.html"><button class="nextbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+  </svg></button></a>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Type of Chips</th>
+                    <th scope="col">نوع الرقائق </th>
+                    <th scope="col">Calories per 100gm</th>
+                    <th scope="col"> Your Serving </th>
+                    <th scope="col">Your Serving Calories </th>
+                
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Potato Chips (Classic)</th> 
+                    <td>رقائق البطاطس (كلاسيكي)</td>
+                    <td class="serving">536</td> 
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">Potato Chips (Salted)</th>
+                    <td>رقائق البطاطس (مالحة)</td>
+                    <td  class="serving">536 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Potato Chips (Barbecue)</th>
+                    <td>رقائق البطاطس (بنكهة الشواء)</td>
+                    <td  class="serving">540 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Potato Chips (Sour Cream & Onion)</th>
+                     <td>رقائق البطاطس (بالكريمة الحامضة والبصل)</td>
+                    <td  class="serving">536 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tortilla Chips</th>
+                    <td> رقائق التورتيلا</td>
+                    <td class="serving">489 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tortilla Chips (Nacho Cheese)</th>
+                    <td>رقائق التورتيلا (جبنة الناتشو)</td>
+                    <td class="serving">500 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Corn Chips</th>
+                    <td>رقائق الذرة</td>
+                    <td class="serving">490 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sweet Potato Chips</th>
+                    <td>رقائق البطاطا الحلوة</td>
+                    <td class="serving">520</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Veggie Chips</th>
+                    <td>رقائق الخضار</td>
+                    <td class="serving">480</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pita Chips</th>
+                    <td>رقائق البيتا</td>
+                    <td class="serving">445 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Popcorn (Butter)</th>
+                    <td>فشار بالزبدة</td>
+                    <td>535 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Popcorn (Plain, Air-popped)</th>
+                    <td>فشار (بدون زبدة، مطهو بالهواء)</td>
+                    <td class="serving">387 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Pringles (Original)</th>
+                    <td>برينجلز (الأصلية)</td>
+                    <td class="serving">526</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Pringles (Sour Cream)</th>
+                    <td>برينجلز (بالكريمة الحامضة)</td>
+                    <td class="serving">526 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Doritos (Nacho Cheese)</th>
+                    <td>دوريتوس (جبنة الناتشو)</td>
+                    <td class="serving">507 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Lay's (Classic)</th>
+                    <td>ليز (كلاسيكي)</td>
+                    <td class="serving">536 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Lay's (Barbecue)</th>
+                    <td>ليز (بنكهة الشواء)</td>
+                    <td class="serving">540 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Ruffles (Cheddar)</th>
+                    <td>روفلس (بالجبن الشيدر)</td>
+                    <td class="serving">560 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Sun Chips (Original)</th>
+                    <td>صن شيبس (الأصلية)</td>
+                    <td class="serving">500 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">Packaged Cheetos (Crunchy)</th>
+                    <td>شيتوس (مقرمش)</td>
+                    <td class="serving">536 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  
+                  
+            
+                </tbody>
+              </table>
+              
+             <script src="/JS/calorieCalculate.js"></script>
+             </body>
+             </html>

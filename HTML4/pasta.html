@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a home page</title>
+    
+    
+    <link rel="stylesheet" href="/CSS/tables.css">
+</head>
+
+<body>
+  <a href="/HTML4/flour.html"><button class="backbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+  </svg></button></a>
+  
+  <a href="/HTML/index.html"><button class="nextbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+  </svg></button></a>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Type of Bread</th>
+                    <th scope="col">نوع الخبز </th>
+                    <th scope="col">Calories per 100gm</th>
+                    <th scope="col"> Your Serving </th>
+                    <th scope="col">Your Serving Calories </th>
+                
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Spaghetti (Boiled)</th> 
+                    <td>سباغيتي مسلوقة</td>
+                    <td class="serving">158</td> 
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">Penne (Boiled)</th>
+                    <td>بيني مسلوقة</td>
+                    <td  class="serving">157 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fettuccine (Boiled)</th>
+                    <td>فيتوتشيني مسلوقة</td>
+                    <td  class="serving">160 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Macaroni (Boiled)</th>
+                     <td>مكرونة مسلوقة</td>
+                    <td  class="serving">150 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lasagna (Cooked with Sauce)</th>
+                    <td>لازانيا مطبوخة مع الصلصة</td>
+                    <td class="serving">200 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gnocchi (Boiled)</th>
+                    <td>نوكي مسلوقة</td>
+                    <td class="serving">140 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ravioli (Cheese Filling, Boiled)</th>
+                    <td>رافيولي محشوة بالجبن مسلوقة</td>
+                    <td class="serving">190 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fusilli (Boiled)</th>
+                    <td>فوسيلي مسلوقة</td>
+                    <td class="serving">160 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Linguine (Boiled)</th>
+                    <td>لينغويني مسلوقة</td>
+                    <td class="serving">157</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tortellini (Meat Filling, Boiled)</th>
+                    <td>تورتيليني محشوة باللحم مسلوقة</td>
+                    <td class="serving">180 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tagliatelle (Boiled)</th>
+                    <td>تاليا تيللي مسلوقة</td>
+                    <td>160 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Spaghetti (With Tomato Sauce)</th>
+                    <td>سباغيتي مع صلصة الطماطم</td>
+                    <td class="serving">180 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Fettuccine Alfredo</th>
+                    <td>فيتوتشيني ألفريدو</td>
+                    <td class="serving">220 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Macaroni and Cheese (Baked)</th>
+                    <td>مكرونة بالجبنة مشوية</td>
+                    <td>250 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Penne Arrabiata (With Sauce)</th>
+                    <td>بيني أرابياتا مع الصلصة</td>
+                    <td class="serving">210 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Lasagna (With Meat Sauce)</th>
+                    <td>لازانيا مع صلصة اللحم</td>
+                    <td class="serving">290 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">Spaghetti Carbonara</th>
+                    <td>سباغيتي كاربونارا</td>
+                    <td class="serving">320 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pesto Pasta (With Sauce)</th>
+                    <td>مكرونة مع صلصة البيستو</td>
+                    <td class="serving">300 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ravioli (Spinach Filling, Boiled)</th>
+                    <td>رافيولي محشوة بالسبانخ مسلوقة</td>
+                    <td>175 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tortellini (Cheese Filling, Boiled)</th>
+                    <td>تورتيليني محشوة بالجبن مسلوقة</td>
+                    <td class="serving">190 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gnocchi (With Tomato Sauce)</th>
+                    <td>نوكي مع صلصة الطماطم</td>
+                    <td class="serving">180 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+             <script src="/JS/calorieCalculate.js"></script>
+             </body>
+             </html>

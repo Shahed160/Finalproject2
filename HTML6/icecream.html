@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a home page</title>
+    
+    
+    <link rel="stylesheet" href="/CSS/tables.css">
+</head>
+
+<body>
+  <a href="/HTML6/cakes.html"><button class="backbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+  </svg></button></a>
+  
+  <a href="/HTML6/sweets.html"><button class="nextbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+  </svg></button></a>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Type of Ice Cream</th>
+                    <th scope="col">نوع البوظة </th>
+                    <th scope="col">Calories per 100gm</th>
+                    <th scope="col"> Your Serving </th>
+                    <th scope="col">Your Serving Calories </th>
+                
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Vanilla Ice Cream</th> 
+                    <td>آيس كريم فانيليا</td>
+                    <td class="serving">207</td> 
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">Chocolate Ice Cream</th>
+                    <td>آيس كريم شوكولاتة</td>
+                    <td  class="serving">216 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Strawberry Ice Cream</th>
+                    <td>آيس كريم فراولة</td>
+                    <td  class="serving">192 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Mint Chocolate Chip Ice Cream</th>
+                     <td>آيس كريم بنكهة الشوكولاتة والنعناع</td>
+                    <td  class="serving">230 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cookies and Cream Ice Cream</th>
+                    <td>آيس كريم كوكيز وكريم</td>
+                    <td class="serving">237 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Coffee Ice Cream</th>
+                    <td>آيس كريم قهوة</td>
+                    <td class="serving">218 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Caramel Ice Cream</th>
+                    <td>آيس كريم بالكراميل</td>
+                    <td class="serving">240 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gelato (Various Flavors)</th>
+                    <td>جيلاتو (نكهات مختلفة)</td>
+                    <td class="serving">160 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sorbet (Various Flavors)</th>
+                    <td>شربات (نكهات مختلفة)</td>
+                    <td class="serving">140</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Soft Serve Ice Cream</th>
+                    <td>آيس كريم سوفت سيرف</td>
+                    <td class="serving">200 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Frozen Yogurt (Vanilla)</th>
+                    <td>زبادي مجمد (فانيليا)</td>
+                    <td>160 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Ice Cream Bars</th>
+                    <td>ألواح آيس كريم مغلفة</td>
+                    <td class="serving">250 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Ice Cream Sandwich</th>
+                    <td>ساندويتش آيس كريم مغلف</td>
+                    <td class="serving">240</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Ice Cream Cones</th>
+                    <td>أقماع آيس كريم مغلفة</td>
+                    <td class="serving">275 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Dairy-Free Ice Cream</th>
+                    <td>آيس كريم خالي من منتجات الألبان</td>
+                    <td class="serving">180 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Low-Fat Ice Cream</th>
+                    <td>آيس كريم قليل الدسم مغلف</td>
+                    <td class="serving">130 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Frozen Custard</th>
+                    <td>كاسترد مجمد مغلف</td>
+                    <td class="serving">222 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Mochi Ice Cream (Packaged)</th>
+                    <td>موشي آيس كريم مغلف</td>
+                    <td class="serving">192 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Vegan Ice Cream (Coconut Base)</th>
+                    <td>آيس كريم نباتي (مبني على جوز الهند)</td>
+                    <td class="serving">180 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  
+                  
+            
+                </tbody>
+              </table>
+              
+             <script src="/JS/calorieCalculate.js"></script>
+             </body>
+             </html>

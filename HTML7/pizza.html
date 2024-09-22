@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a home page</title>
+    
+    
+    <link rel="stylesheet" href="/CSS/tables.css">
+</head>
+
+<body>
+  <a href="/HTML7/meals.html"><button class="backbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+  </svg></button></a>
+  
+  <a href="/HTML/index.html"><button class="nextbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+  </svg></button></a>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Type of Pizza</th>
+                    <th scope="col">نوع البيتزا</th>
+                    <th scope="col">Calories per 100gm</th>
+                    <th scope="col"> Your Serving </th>
+                    <th scope="col">Your Serving Calories </th>
+                
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Margherita Pizza</th> 
+                    <td>بيتزا مارغريتا</td>
+                    <td class="serving">250</td> 
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">Pepperoni Pizza</th>
+                    <td>بيتزا ببروني</td>
+                    <td  class="serving">290 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cheese Pizza</th>
+                    <td>بيتزا بالجبنة</td>
+                    <td  class="serving">270 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Veggie Pizza</th>
+                     <td>بيتزا نباتية</td>
+                    <td  class="serving">240 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Meat Lover’s Pizza</th>
+                    <td>بيتزا اللحوم</td>
+                    <td class="serving">300 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">BBQ Chicken Pizza</th>
+                    <td>بيتزا دجاج باربيكيو</td>
+                    <td class="serving">280 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Supreme Pizza (Meat & Veggies)</th>
+                    <td>بيتزا سوبريم (لحم وخضروات)</td>
+                    <td class="serving">290 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Thin Crust Pizza (Cheese)</th>
+                    <td>بيتزا بقشرة رقيقة (جبنة)</td>
+                    <td class="serving">240 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Deep Dish Pizza (Cheese)</th>
+                    <td>بيتزا عميقة (جبنة)</td>
+                    <td class="serving">330</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gluten-Free Pizza (Cheese)</th>
+                    <td>بيتزا خالية من الغلوتين (جبنة)</td>
+                    <td class="serving">260</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">White Pizza (Ricotta & Spinach)</th>
+                    <td>بيتزا بيضاء (ريكوتا وسبانخ)</td>
+                    <td>270 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Calzone (Cheese & Pepperoni)</th>
+                    <td>كالزوني (جبنة وببروني)</td>
+                    <td class="serving">280 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Frozen Cheese Pizza</th>
+                    <td>بيتزا جبنة مجمدة مغلفة</td>
+                    <td class="serving">270</td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Frozen Pepperoni Pizza</th>
+                    <td>بيتزا ببروني مجمدة مغلفة</td>
+                    <td class="serving">290 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Frozen Veggie Pizza</th>
+                    <td>بيتزا نباتية مجمدة مغلفة</td>
+                    <td class="serving">240 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Frozen Meat Lover’s Pizza</th>
+                    <td>بيتزا اللحوم مجمدة مغلفة</td>
+                    <td class="serving">300 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Frozen BBQ Chicken Pizza</th>
+                    <td>بيتزا دجاج باربيكيو مجمدة مغلفة</td>
+                    <td class="serving">280 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Packaged Frozen Thin Crust Pizza</th>
+                    <td>بيتزا بقشرة رقيقة مجمدة مغلفة</td>
+                    <td class="serving">240 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Packaged Frozen Deep Dish Pizza</th>
+                    <td>بيتزا عميقة مجمدة مغلفة</td>
+                    <td class="serving">330 </td>
+                    <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+                    <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+                  </tr>
+                  
+                  
+                  
+                  
+                  
+            
+                </tbody>
+              </table>
+              
+             <script src="/JS/calorieCalculate.js"></script>
+            </body></html>

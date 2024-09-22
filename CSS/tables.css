@@ -1,0 +1,161 @@
+
+
+
+.table{
+    margin-top: 2%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    box-shadow: 0 4px 8px black;
+    /* text-shadow: 0 4px 8px black; */
+    border: 1px solid #ddd;
+    width: 100%;
+    border-spacing: 10px;
+    /* border-collapse: collapse; */
+    border-radius: 10px;
+}
+.thead-dark{
+text-align: center;
+}
+tr {
+    box-shadow: 2px 2px 2px black;
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    /* background: green; */
+}
+.backbutton{
+    padding:3px 5px;
+    border-radius: 25%;
+  }
+  .nextbutton{
+    padding:3px 5px;
+    border-radius: 25%;
+    float:right;
+  }
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 9px !important;
+    overflow:hidden !important;
+}
+button {
+    appearance: auto;
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ; */
+
+    padding-left: 0%;
+    padding-right: 0%;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+th {
+    font-family: cursive;
+    background: linear-gradient(to right, white, green);
+    color: black;
+    background-color: black;
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+    unicode-bidi: isolate;
+}
+td {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 19px;
+    font-family: cursive;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+}
+input#apple-weight.inputButton {/*
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-variant-position: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-size-adjust: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ; */
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: white;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}

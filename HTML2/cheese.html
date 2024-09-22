@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a home page</title>
+    
+    
+    <link rel="stylesheet" href="/CSS/tables.css">
+</head>
+
+<body>
+  <a href="/HTML2/yogurt.html"><button class="backbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+  </svg></button></a>
+  
+  <a href="/HTML/index.html"><button class="nextbutton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+  </svg></button></a>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Cheese Type</th>
+        <th scope="col">نوع الجبن  </th>
+        <th scope="col">Calories per 100gm</th>
+        <th scope="col"> Your Serving </th>
+        <th scope="col">Your Serving Calories </th>
+    
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Cheddar</th> 
+        <td>شيدر</td>
+        <td>403 kcal</td> 
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Mozzarella</th>
+        <td>موزاريلا</td>
+        <td id="per100">280 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Parmesan</th>
+        <td>بارميزان</td>
+        <td>431 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Feta</th>
+        <td>فيتا</td>
+        <td>264 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Gouda</th>
+        <td>جودة</td>
+        <td>356 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Blue Cheese</th>
+        <td>جبنة زرقاء</td>
+        <td>353 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Cream Cheese</th>
+        <td>جبنة كريمية</td>
+        <td>342 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Ricotta</th>
+        <td>ريكوتا</td>
+        <td>174 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Swiss Cheese</th>
+        <td>جبنة سويسرية</td>
+        <td>380 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Cottage Cheese</th>
+        <td>جبنة قريش</td>
+        <td>98 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Halloumi</th>
+        <td>حلومي</td>
+        <td>321 kcal</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Provolone</th>
+        <td>بروفولوني</td>
+        <td class="serving">352</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Mascarpone</th>
+        <td>ماسكربوني</td>
+        <td class="serving">429</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Havarti</th>
+        <td>هافارتي</td>
+        <td class="serving">371</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Goat Cheese</th>
+        <td>جبن الماعز</td>
+        <td class="serving">364 </td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+      <tr>
+        <th scope="row">Paneer</th>
+        <td>بانير</td>
+        <td class="serving">265</td>
+        <td><input type="number"  class="inputButton"  placeholder="enter your weight in grams"></td>
+        <td class="totalCalories"><button onclick="calculateCalories()">Calculate</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+  
+ <script src="/JS/calorieCalculate.js"></script>
+  </body>
+  </html>

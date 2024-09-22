@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>this is a home page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="/CSS/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fitness Way</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="middle">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/HTML/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="25"  class="bi bi-house-door-fill" viewBox="0 0 16 16">
+              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+            </svg></a>
+          </li>
+    
+          <li class="nav-item dropdown" id="dropdown1">
+            <a class="nav-link" href="/HTML/receips.html">Recieps</a>
+          </li>
+          </li>
+          <li class="nav-item dropdown" id="dropdown2" >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Calculations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/HTML/BMI.html" >BMI</a></li>
+              <li><a class="dropdown-item" href="/HTML/BMR.html">BMR</a></li>
+             
+              <li><a class="dropdown-item" href="/HTML/IBW.html">IBW</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" id="searchInput">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"  >
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        
+          <!-- <button class="btn btn-outline-success" type="submit"></button> -->
+        </form>
+      </div>
+    </div>
+  </nav>
+     <!-- <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#" >Fitness Way</a>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="25"  class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+              </svg> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            
+          </ul>
+          
+          
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    
+  </nav>  -->
+  <!-- <div id="image1"><img src="/Media/llll.jpg"></div> -->
+   
+  <div class="background1" >
+    <img src="/Media/background1.jpg"  alt="Background Image">
+    <h1 class="centerTextHead" >Calorie counting</h1>
+    <div class="centerText"> is a method of tracking the energy we consume to maintain, lose, or gain weight. By balancing the calories we eat with the calories we burn through daily activities, we can manage our health and reach fitness goals. It's a simple yet effective way to understand our body's energy needs and make informed dietary choices.</div>
+  </div>
+  <!-- <h1 class="centerTextHead" >Calorie counting</h1>
+   <div class="centerText"> is a method of tracking the energy we consume to maintain, lose, or gain weight. By balancing the calories we eat with the calories we burn through daily activities, we can manage our health and reach fitness goals. It's a simple yet effective way to understand our body's energy needs and make informed dietary choices.</div> -->
+ 
+  <ul id="allCards">
+  <br>
+  <p class="cardsTextPart">Vegetables & Fruits</p>
+  <br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+       <a href="/HTML1/vegtables.html">
+        <div class="card" style="width: 100%; " >
+          <li class="items">
+            <img src="/Media/vegtables1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vegetables & Legumes</h5>
+              <p class="card-text">Vegetables are a great high-volume, low-calorie option. You can eat a lot of them, they’re satiating and packed with vitamins. Legumes are more calorie dense but also dense in nutrients, especially protein, making them a great meat alternative for a vegan or vegetarian diet. Check out our Vegetables and Legumes Calorie Chart below for more nutritional information.</p>
+               </div>
+          </li>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML1/fruit.html">
+        <div class="card" style="width: 100%; ">
+            <img src="/Media/fruit2.jpg" class="card-img-top" alt="...">
+            <li class="items">
+            <div class="card-body">
+              <h5 class="card-title">Fruit</h5>
+              <p class="card-text">Generally low in calories and rich in vitamins and micronutrients, fruits are primarily made up of carbs. Some calories may also come from fat. The carbs in fruits come from fructose and other types of sugar. Depending on the fruit, sugar contents can vary quite a bit. Check out our Fruit Chart below for more nutritional information.</p>
+           
+            </div>
+          </li>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML1/patatoes.html">
+        <div class="card" style="width: 100%; ">
+            <img src="/Media/potato.jpg" class="card-img-top" alt="...">
+            <li class="items">
+            <div class="card-body">
+              <h5 class="card-title">Potatoes & Potato Products</h5>
+              <p class="card-text">Potatoes are very high in vitamin C, their skins are packed with fiber and, although they are higher in carbs, these starchy complex carbohydrates are converted into energy and will keep you feeling fuller for longer. Check out our Potatoes and Potato Products Calorie Chart below for more nutritional information.</p>
+            
+            </div>
+            </li>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</br></br>
+  
+
+
+<br>
+<p class="cardsTextPart">Milk & Dairy Products</p>
+<br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a href="/HTML2/milk.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/milk10.jpg" id="milkImg"class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Milk & Dairy Products</h5>
+              <p class="card-text">Milk and dairy products generally contain a nice balance of fat, carbs and protein, but their calorie contents are highly dependent on the fat contents of the milk. There is also a wide selection of plant-based milks on the market, but keep an eye out for added sugars. Check out our Milk and Dairy Products Chart below for more nutritional information.</p>
+               </div>
+          
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML2/yogurt.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/yogurt3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h5 class="card-title">Yogurt</h5>
+              <p class="card-text">Made from the fermentation of milk, yogurt is generally low in calories. Although, this can be highly dependent on added sugars and overall fat content. Generally high in protein, yogurt can be made from various sources, including cow’s milk or other plant-based alternatives. Check out our Yogurt Chart below for more nutritional information.</p>
+             
+            </div>
+         
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML2/cheese.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/cheese1.jpg" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+              <h5 class="card-title">Cheese</h5>
+              <p class="card-text">Made up of mostly fat and protein, and rich in bone and teeth strengthening calcium, the nutritional value and calorie count of cheese is highly dependent on the fat contents of the milk used, how it's processed and its age. Check out our Cheese Calorie Chart below for more nutritional information.</p>
+              
+            </div>
+          
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</br>
+</br>
+
+
+
+
+<br>
+<p class="cardsTextPart">Meat</p>
+<br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a href="/HTML3/meat.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/meat3.jpg" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+              <h5 class="card-title">Meat</h5>
+              <p class="card-text">Primarily made up of protein and fat, meat is a great source of essential amino acids, vitamin B12 and iron. The calorie content of meat is highly dependent on the cut and resulting fat-to-protein ratio. The preparation method, sauces and seasoning can also affect the calorie count. Check out our Meat Chart below for more nutritional information.</p>
+              
+            
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML3/chicken.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/chicken2.jpg" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+              <h5 class="card-title">Chicken & Turkey</h5>
+              <p class="card-text">Primarily made up of protein and fat, the calorie content of poultry is highly dependent on the cut of the meat. Lean cuts, such as the breast, generally have the best fat-to-muscle ratio, making them low-calorie and high-protein choices. The protein in poultry is also very digestible. Check out our Poultry, Chicken and Turkey Chart below for more nutritional information.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML3/anotherprotien.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/egg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Another Protien Sources</h5>
+              <p class="card-text">Protein is essential for tissue repair, enzyme production. Animal-based proteins (meat, poultry, fish, eggs, dairy) are complete proteins, containing all essential amino acids, and are highly bioavailable. However, they can be higher in saturated fats. Plant-based proteins (beans, lentils, tofu, seeds) are often lower in fat and calories. A mix of both sources ensures balanced nutrition.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</br>
+</br>
+
+
+<br>
+<p class="cardsTextPart">Cereal Products</p>
+<br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a href="/HTML4/bread.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/bread.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bread</h5>
+              <p class="card-text">Primarily made of carbs, bread products are generally high in calories, especially when butter, fat and other sugary toppings are added. Whole grain variations will be more nutritious and higher in fiber. Check out our Bread, Bread Rolls and Pastries Chart below for more nutritional information.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML4/flour.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/flour2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Flour, Grains & Rice Ingredients</h5>
+              <p class="card-text">Flour and grains are generally high in carbohydrates. If you opt for whole grain varieties, they will be less processed and provide more fiber. Baking ingredients can vary drastically in their nutritional values depending on type and portion size. Check out our Flour, Grains and Baking Ingredients Chart below for more nutritional information.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML4/pasta.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/pasta.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pasta & Noodles</h5>
+              <p class="card-text">Primarily made of carbs, pasta and noodles are a great source of energy before a workout. Whole grain variations will be more nutritious and higher in fiber. Depending on the recipe and added ingredients, the fat, protein and overall calorie count can differ quite drastically. Check out our Pasta and Noodle Chart below for more nutritional information.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</br></br>
+
+<br>
+<p class="cardsTextPart">Candy & Sweets</p>
+<br>
+
+<div class="scroll">
+  <button onclick="prevItems()" id="prevButton"><</button>
+  <button onclick="nextItems()" id="nextButton">></button>
+  
+</div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <!-- <a href="/HTML6/cakes.html"> -->
+        <div class="card ca" id="card1" style="width: 100%;">
+            <img src="/Media/cake10.jpg" class="card-img-top" alt="hgtfthhkj">
+            <div class="card-body ">
+              <h5  class="card-title">Cake</h5>
+              <p   class="card-text">Cake is a popular dessert that typically contains a mixture of carbohydrates, fats, and protein. The calorie content of cake can vary greatly depending on the ingredients used, such as butter, sugar, and eggs. Cakes made with a high amount of sugar and fat tend to be more calorie-dense. However, cakes that incorporate alternative ingredients like almond flour or low-fat yogurt can offer a lower-calorie option. While cake is generally not considered a high-protein food, certain types (such as those made with nuts or protein powder) can provide more protein content. Cakes are usually enjoyed as a treat due to their high carbohydrate content from sugars and refined flour, making them a source of quick energy but low in nutrients. Moderation is key when incorporating cake into a balanced diet.</p>
+              
+            </div>
+          </div>
+        <!-- </a> -->
+      </div>
+      <div class="col">
+        <!-- <a href="/HTML6/icecream.html"> -->
+        <div class="card ca" id="card2" style="width: 100%;">
+            <img src="/Media/icecream1.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">Ice Cream</h5>
+              <p class="card-text">Ice cream is a delicious and popular treat made primarily from dairy, sugar, and fat. The calorie content of ice cream varies based on its ingredients, particularly the amount of cream, milk, and sugar used. Full-fat ice creams tend to be higher in calories and fat due to their rich cream base, while light or low-fat versions offer fewer calories by using lower-fat milk or cream alternatives.</p>
+              
+            </div>
+          </div>
+        <!-- </a> -->
+      </div>
+      <div class="col">
+        <!-- <a href="/HTML6/sweets.html"> -->
+        <div class="card ca" id="card3" style="width: 100%;">
+            <img src="/Media/sweet1.jpg" class="card-img-top" alt="...">
+            <div class="card-body shahed">
+              <h5 class="card-title">Sweets</h5>
+              <p class="card-text">Sweets, including candy, chocolates, pastries, and sugary snacks, are primarily made up of carbohydrates, especially in the form of sugar. While they provide a quick source of energy, they are often high in calories with minimal nutritional value, as they generally lack essential nutrients like protein, fiber, vitamins, and minerals. Sweets often contain added sugars and fats, particularly saturated and trans fats, which can contribute to excess calorie intake and potential health risks if consumed in large amounts.</p>
+              
+            </div>
+          </div>
+        <!-- </a> -->
+      </div>
+    </div>
+  </div>
+</br></br>
+
+
+<br>
+<p class="cardsTextPart">Dishes & Meals</p>
+<br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a href="/HTML7/fastfood.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/fastfood.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fast Food</h5>
+              <p class="card-text">Fast food is convenient but often high in calories, unhealthy fats, sodium, and sugars. Common items like burgers, fries, and pizza tend to be low in essential nutrients such as fiber and vitamins, while being calorie-dense and highly processed. Regular consumption can contribute to weight gain and increase the risk of health issues like heart disease and obesity.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML7/pizza.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/pizza.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza</h5>
+              <p class="card-text">Pizza is often high in calories, saturated fat, and sodium, especially with thick crusts and processed meats like pepperoni. It provides protein from cheese and meats but is typically low in fiber. Healthier options include thin crusts, vegetable toppings, and lean proteins. Enjoy pizza in moderation as part of a balanced diet.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML7/meals.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/soup.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Soup</h5>
+              <p class="card-text">Soup can be a nutritious and low-calorie option, especially when made with broth, vegetables, and lean proteins. However, cream-based soups are often higher in calories and fat. Soups are typically filling due to their high water content and can be a good source of fiber and vitamins when loaded with veggies. Be mindful of sodium levels in canned or restaurant soups.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</br></br>
+
+
+
+<br>
+<p class="cardsTextPart">Nuts & Oils</p>
+<br>
+  <div class="container text-center">
+    <ul class="row">
+      <div class="col">
+        <a href="/HTML5/nuts.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/nuts.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title ">Nuts</h5>
+              <p class="card-text ">Nuts are a nutrient-dense snack rich in healthy fats, protein, fiber, and various vitamins and minerals like vitamin E and magnesium. They are calorie-dense due to their fat content but provide heart-healthy unsaturated fats. Consumed in moderation, nuts can support heart health and provide sustained energy.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="/HTML5/oils.html">
+        <div class="card" style="width: 100%;">
+            <img src="/Media/oil4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oils</h5>
+              <p class="card-text">Oils are high in calories and primarily made up of fats, which can be healthy or unhealthy depending on the type. Olive oil and avocado oil are rich in healthy monounsaturated fats and have heart benefits, while oils like coconut and palm oil contain more saturated fats. Vegetable oils like canola and sunflower are often lower in saturated fats. Oils should be consumed in moderation due to their high calorie content.</p>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+    </ul>
+    <footer class="footer">
+      <ul class="icons">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 25 25">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 25 25">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 25 25">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 25 25">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg>
+    </ul>
+      
+      <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+    </footer>
+      <!-- <script src="/JS/scrollCards.js"><script> -->
+<script src="/JS/scrollCards.js"></script>
+</body>
+</html>
