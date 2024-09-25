@@ -11,6 +11,12 @@
     margin-bottom: var(--bs-card-title-spacer-y);
     color: var(--bs-card-title-color);
 }
+.card:hover {
+    transform:translateX(7px)scale(1.03);
+    box-shadow: 5px 5px 5px  black;
+    
+}
+
 .row {
    
     --bs-gutter-x: 1.5rem;

@@ -19,6 +19,11 @@
     padding-left: 20%;
     /* background-color: rgb(255, 0, 183); */
 }
+#dropdown2:hover{
+    /* transform: translateX(5px) scale(1.05); */
+    text-shadow: 3px 3px 3px lightgray;
+   
+}
 /* .nav-link{
     color:black;
     font-family: cursive;
@@ -176,6 +181,14 @@ a{
     height: 550px;
     display: flex;
  }
+ .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 5px 5px 5px  black;
+    
+}
+
+
+
  .row{
    display: inline-flex;
  }
@@ -211,6 +224,10 @@ a{
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     scrollbar-shadow-color: chartreuse;
 }
+/* .cardsTextPart:hover{
+    transform: translateX(-10px) scale(1.05);
+    text-shadow: 5px 5px 5px black;
+} */
 /* #milkImg{
     height: 262px;
 } */
@@ -230,6 +247,10 @@ a{
     left: 28%;
     text-align: center;
 }
+/* .centerTextHead:hover{
+    transform: translateX(10px) scale(1.05);
+    text-shadow: 5px 5px 5px black;
+} */
  .centerText{
     text-shadow: 1px 1px lightgray;
     font-weight:600;
@@ -246,6 +267,22 @@ a{
     text-align: center;
     
  }
+ /* .centerText:hover{
+    transform: translateX(-10px) scale(1.05);
+    text-shadow: 5px 5px 5px black;
+} */
+ .navbar-brand:hover{
+    transform: translateX(5px) scale(1.05);
+        box-shadow: 4px 4px 4px lightgray;
+ }
+ #dropdown1:hover{
+   
+    text-shadow: 3px 3px 3px lightgray;
+ }
+ /* .bi-house-door-fill:hover{
+   
+    color:lightgray;
+ } */
  .background1{
     /* background-color: brown;
       z-index: -1;
@@ -263,6 +300,10 @@ a{
     height: 350px;
       
       }
+      .background1:hover{
+        transform: translateX(10px) scale(1.05);
+        box-shadow: 5px 5px 5px black;
+    }
       .backbutton{
         padding:3px 5px;
         border-radius: 25%;

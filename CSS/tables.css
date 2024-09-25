@@ -96,6 +96,11 @@ th {
     text-align: center;
     unicode-bidi: isolate;
 }
+
+tr:hover{
+    transform:translateX(5px)scale(1.05);
+    box-shadow: 5px 5px 5px  black;
+}
 td {
     border-bottom: 1px solid #ddd;
     overflow: hidden;
