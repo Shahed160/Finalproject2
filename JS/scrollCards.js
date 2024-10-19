@@ -156,7 +156,8 @@ searchInput.addEventListener('input', function () {
         if (cardContent.includes(searchValue)) {
             cardSearch[i].style.opacity = '1';  
             cardSearch[i].style.visibility = 'visible';  
-            cardSearch[i].style.transition = 'opacity 0.5s';  
+            cardSearch[i].style.transition = 'opacity 0.5s';
+                
         } else {
             cardSearch[i].style.opacity = '0';  
             cardSearch[i].style.visibility = 'hidden';  
